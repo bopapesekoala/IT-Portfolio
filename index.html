@@ -1,262 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNSE Electrical Projects | Electrical &amp; Solar Solutions</title>
 
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tnseelectricalprojects.blogspot.com/">
+    <meta name="twitter:title" content="TNSE Electrical Projects | Electrical &amp; Solar Solutions">
+    <meta name="twitter:description" content="TNSE Electrical Projects offers professional residential, commercial, and industrial electrical services along with sustainable solar energy installations.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dulmfdigk/image/upload/v1777992465/1777992282657_s1c4ca.png">
+    
+    <link rel="icon" href="https://res.cloudinary.com/dulmfdigk/image/upload/v1777992465/1777992282657_s1c4ca.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dulmfdigk/image/upload/v1777992465/1777992282657_s1c4ca.png">
+    
+    <link rel="sitemap" href="https://tnseelectricalprojects.blogspot.com/atom.xml?redirect=false&amp;start-index=1&amp;max-results=500" type="application/xml" title="TNSE Electrical Projects | Dynamic Site Map">
+    <link rel="sitemap" href="https://tnseelectricalprojects.blogspot.com/sitemap.xml" type="application/xml">
+    <link rel="alternate" href="https://tnseelectricalprojects.blogspot.com/feeds/pages/default?alt=rss" type="application/rss+xml" title="TNSE Electrical Projects | Static Pages Feed">
+    <link rel="alternate" href="https://tnseelectricalprojects.blogspot.com/feeds/posts/default" type="application/atom+xml" title="TNSE Electrical Projects - Atom Feed">
+    <link rel="alternate" href="https://tnseelectricalprojects.blogspot.com/feeds/posts/default?alt=rss" type="application/rss+xml" title="TNSE Electrical Projects - RSS Feed">
+    <link rel="canonical" href="https://tnseelectricalprojects.blogspot.com/">
 
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ractive"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" type="text/javascript"></script>
 
-    <title>Portfolio | Sekoala</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tnseelectricalprojects.blogspot.com/#home"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://tnseelectricalprojects.blogspot.com/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://tnseelectricalprojects.blogspot.com/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://tnseelectricalprojects.blogspot.com/#contact"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://tnseelectricalprojects.blogspot.com/#website",
+          "url": "https://tnseelectricalprojects.blogspot.com/",
+          "name": "TNSE Electrical Projects",
+          "description": "Professional Electrical Contracting and Solar Energy Solutions"
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "SiteNavigationElement",
+              "position": 1,
+              "name": "Home",
+              "url": "https://tnseelectricalprojects.blogspot.com/#home"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 2,
+              "name": "About",
+              "url": "https://tnseelectricalprojects.blogspot.com/#about"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 3,
+              "name": "Electrical Services",
+              "url": "https://tnseelectricalprojects.blogspot.com/#services"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 4,
+              "name": "Solar Solutions",
+              "url": "https://tnseelectricalprojects.blogspot.com/#solar"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 5,
+              "name": "Blog",
+              "url": "https://tnseblogger.blogspot.com/p/blog.html"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 6,
+              "name": "Contact",
+              "url": "https://tnseelectricalprojects.blogspot.com/#contact"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="text/javascript">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: '#0066cc',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style type="text/css">
+      body {
+        font-family: inherit;
+      }
+
+      /* --- Global Settings & Smooth Scroll --- */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* ==========================================================================
+         Unified Scroll-Driven & Fallback Reveal System
+         ========================================================================== */
+
+      /* Native Scroll-Driven Animations (Chrome 115+, Edge 115+) */
+      @supports (animation-timeline: view()) {
+        @keyframes fade-left-to-right {
+          0% { opacity: 0; transform: translate3d(-40px, 0, 0); }
+          20%, 80% { opacity: 1; transform: translate3d(0, 0, 0); }
+          100% { opacity: 0; transform: translate3d(40px, 0, 0); }
+        }
+
+        @keyframes fade-right-to-left {
+          0% { opacity: 0; transform: translate3d(40px, 0, 0); }
+          20%, 80% { opacity: 1; transform: translate3d(0, 0, 0); }
+          100% { opacity: 0; transform: translate3d(-40px, 0, 0); }
+        }
+
+        @keyframes fade-bottom-to-top {
+          0% { opacity: 0; transform: translate3d(0, 40px, 0); }
+          20%, 80% { opacity: 1; transform: translate3d(0, 0, 0); }
+          100% { opacity: 0; transform: translate3d(0, -40px, 0); }
+        }
+
+        @keyframes fade-top-to-bottom {
+          0% { opacity: 0; transform: translate3d(0, -40px, 0); }
+          20%, 80% { opacity: 1; transform: translate3d(0, 0, 0); }
+          100% { opacity: 0; transform: translate3d(0, 40px, 0); }
+        }
+
+        @keyframes fade-middle-in {
+          0% { opacity: 0; transform: scale3d(0.85, 0.85, 1); }
+          20%, 80% { opacity: 1; transform: scale3d(1, 1, 1); }
+          100% { opacity: 0; transform: scale3d(0.85, 0.85, 1); }
+        }
+
+        @keyframes fade-middle-out {
+          0% { opacity: 0; transform: scale3d(1.15, 1.15, 1); }
+          20%, 80% { opacity: 1; transform: scale3d(1, 1, 1); }
+          100% { opacity: 0; transform: scale3d(1.15, 1.15, 1); }
+        }
+
+        /* Utility Class Assignments */
+        .scroll-fade-ltr, .fade-left, .fade-ltr {
+          animation: fade-left-to-right linear both;
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+          will-change: opacity, transform;
+        }
+
+        .scroll-fade-rtl, .fade-right, .fade-rtl {
+          animation: fade-right-to-left linear both;
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+          will-change: opacity, transform;
+        }
+
+        .scroll-fade-btt, .fade-up, .fade-btt {
+          animation: fade-bottom-to-top linear both;
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+          will-change: opacity, transform;
+        }
+
+        .scroll-fade-ttb, .fade-down, .fade-ttb {
+          animation: fade-top-to-bottom linear both;
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+          will-change: opacity, transform;
+        }
+
+        .scroll-fade-min, .fade-middle-in, .fade-min {
+          animation: fade-middle-in linear both;
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+          will-change: opacity, transform;
+        }
+
+        .scroll-fade-mout, .fade-middle-out, .fade-mout {
+          animation: fade-middle-out linear both;
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+          will-change: opacity, transform;
+        }
+      }
+
+      /* Fallback System (Legacy Browsers / JS IntersectionObserver) */
+      @supports not (animation-timeline: view()) {
+        .scroll-reveal,
+        .fade-left, .fade-right, .fade-down, .fade-up,
+        .fade-middle-in, .fade-middle-out {
+          opacity: 0;
+          transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                      transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+          will-change: opacity, transform;
+        }
+
+        /* Initial Hidden State Offsets */
+        .fade-left { transform: translate3d(-40px, 0, 0); }
+        .fade-right { transform: translate3d(40px, 0, 0); }
+        .fade-down { transform: translate3d(0, -40px, 0); }
+        .fade-up { transform: translate3d(0, 40px, 0); }
+        .fade-middle-in { transform: scale3d(0.85, 0.85, 1); }
+        .fade-middle-out { transform: scale3d(1.15, 1.15, 1); }
+
+        /* Active Visible State */
+        .scroll-reveal.is-visible,
+        .fade-left.is-visible,
+        .fade-right.is-visible,
+        .fade-down.is-visible,
+        .fade-up.is-visible,
+        .fade-middle-in.is-visible,
+        .fade-middle-out.is-visible {
+          opacity: 1;
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        }
+
+        /* Stagger Delays */
+        .delay-1 { transition-delay: 100ms; }
+        .delay-2 { transition-delay: 200ms; }
+        .delay-3 { transition-delay: 300ms; }
+        .delay-4 { transition-delay: 400ms; }
+      }
+    </style>
 </head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRND64DZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <div class="fixed z-50 bottom-4 left-1/2 -translate-x-1/2 flex flex-row space-x-2 md:space-x-0 md:space-y-3 md:bottom-auto md:left-auto md:right-4 md:top-1/2 md:-translate-y-1/2 md:flex-col bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-2 rounded-2xl shadow-2xl border border-cyan-500/30 dark:border-slate-800 transition-all duration-300">
 
-<body>
-    <div class="container">
-        <!-- --------------- HEADER --------------- -->
-        <nav id="header">
-            <div class="nav-logo">
-                <p class="nav-name">Sekoala</p>
-                <span>.</span>
-            </div>
-            <div class="nav-menu" id="myNavMenu">
-                <ul class="nav_menu_list">
-                    <li class="nav_list">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#contact" class="nav-link">Contact</a>
-                        <div class="circle"></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <a href="path/to/your/CV.pdf" class="btn" download>Download CV <i class="uil uil-file-alt"></i></a>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-            </div>
-        </nav>
+    <a aria-label="Call Gantshe" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#34A853] hover:bg-[#2e964a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="tel:+27818276288">
+      <i class="fa-solid fa-phone text-base md:text-lg"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        Call Gantshe: +27 81 827 6288
+      </span>
+    </a>
 
+    <a aria-label="WhatsApp Gantshe" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="https://wa.me/27818276288?text=Hi%20Gantshe%2C%20I%20would%20like%20to%20get%20a%20quote%20from%20TNSE%20Electrical%20Projects.%20%E2%9A%A1%0A%0A%22We%20Don%E2%80%99t%20Just%20Wire%20Buildings%20%E2%80%94%20We%20Power%20Dreams.%22%0A%0AThank%20you%20for%20reaching%20out%20to%20us.%20Whether%20you%20need%20a%20residential%20compliance%20certificate%2C%20commercial%20installations%2C%20or%20emergency%20maintenance%2C%20our%20engineering%20team%20is%20ready%20to%20assist.%0A%0ATo%20help%20us%20serve%20you%20faster%2C%20please%20reply%20with%3A%0A1%EF%B8%8F%E2%83%A3%20Your%20Name%20%26%20Location%0A2%EF%B8%8F%E2%83%A3%20A%20brief%20description%20of%20your%20electrical%20project%20or%20issue%0A%0A%F0%9F%8C%90%20Explore%20our%20work%20online%3A%0A%E2%80%A2%20Main%20Website%3A%20https%3A%2F%2Ftnseelectricalprojects.blogspot.com%2Fp%2Fhome.html%23hero%0A%E2%80%A2%20Technical%20Insights%20Blog%3A%20https%3A%2F%2Ftnseblogger.blogspot.com%2Fp%2Fblog.html%0A%0A%F0%9F%93%A7%20Email%3A%20tnse.electricalprojects%40gmail.com%0A%F0%9F%93%9E%20Direct%20Line%20(Gantshe)%3A%20%2B27%2081%20827%206288%0A%F0%9F%93%9E%20Direct%20Line%20(Frans)%3A%20%2B27%2081%20550%207926%0A%0AAn%20electrical%20specialist%20will%20review%20your%20request%20and%20get%20right%20back%20to%20you!" rel="noopener noreferrer" target="_blank">
+      <i class="fa-brands fa-whatsapp text-lg md:text-xl"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        WhatsApp Gantshe
+      </span>
+    </a>
 
-        <!-- -------------- MAIN ---------------- -->
-        <main class="wrapper">
-            <!-- -------------- FEATURED BOX ---------------- -->
-            <section class="featured-box" id="home">
-                <div class="featured-text">
-                    <div class="featured-text-card">
-                        <span>Sekoala Daniel Bopape</span>
-                    </div>
-                    <div class="featured-name">
-                        <p>I'm <span class="typedText"></span></p>
-                    </div>
-                    <div class="featured-text-info">
-                        <p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites.
-                        </p>
-                    </div>
-                    <div class="featured-text-btn">
-                        <button class="btn blue-btn">Hire Me</button>
-                        <a href="path/to/your/CV.pdf" class="btn" download>Download CV <i class="uil uil-file-alt"></i></a>
-                    </div>
-                    <div class="social_icons">
-                        <a href="https://facebook.com" class="icon"><i class="uil uil-facebook-f"></i></a>
-                        <a href="https://youtube.com" class="icon"><i class="uil uil-youtube"></i></a>
-                        <a href="https://telegram.org" class="icon"><i class="uil uil-telegram"></i></a>
-                        <a href="https://tiktok.com" class="icon"><i class="uil uil-tiktok"></i></a>
-                        <a href="https://instagram.com" class="icon"><i class="uil uil-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <img src="images/avatar.png" alt="avatar">
-                    </div>
-                </div>
-                <div class="scroll-icon-box">
-                    <a href="#about" class="scroll-btn">
-                        <i class="uil uil-mouse-alt"></i>
-                        <p>Scroll Down</p>
-                    </a>
-                </div>
+    <a aria-label="Call Frans" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#34A853] hover:bg-[#2e964a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="tel:+27815507926">
+      <i class="fa-solid fa-phone text-base md:text-lg"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        Call Frans: +27 81 550 7926
+      </span>
+    </a>
 
-            </section>
-            <!-- -------------- ABOUT BOX ---------------- -->
-            <section class="section" id="about">
-                <div class="top-header">
-                    <h1>About Me</h1>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-info">
-                            <h3>My introduction</h3>
-                            <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge frameworks and libraries,which allows me to implement interactive features. Additionally, I have experirence working with content management systems (CMS)
-                                like WordPress.
-                            </p>
-                            <div class="about-btn">
-                                <a href="path/to/your/CV.pdf" class="btn" download>Download CV <i class="uil uil-import"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Frontend</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>Bootstrap</span>
-                                <span>JavaScript</span>
-                                <span>Vue</span>
-                                <span>React</span>
-                                <span>Angular</span>
-                            </div>
-                        </div>
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Backend</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>PHP</span>
-                                <span>JAVA</span>
-                                <span>Python</span>
-                                <span>C++</span>
-                            </div>
-                        </div>
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Database</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>MySQL</span>
-                                <span>PostgreSQL</span>
-                                <span>MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <a aria-label="WhatsApp Frans" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="https://wa.me/27815507926?text=Hi%20Frans%2C%20I%20would%20like%20to%20get%20a%20quote%20from%20TNSE%20Electrical%20Projects.%20%E2%9A%A1%0A%0A%22We%20Don%E2%80%99t%20Just%20Wire%20Buildings%20%E2%80%94%20We%20Power%20Dreams.%22%0A%0AThank%20you%20for%20reaching%20out%20to%20us.%20Whether%20you%20need%20a%20residential%20compliance%20certificate%2C%20commercial%20installations%2C%20or%20emergency%20maintenance%2C%20our%20engineering%20team%20is%20ready%20to%20assist.%0A%0ATo%20help%20us%20serve%20you%20faster%2C%20please%20reply%20with%3A%0A1%EF%B8%8F%E2%83%A3%20Your%20Name%20%26%20Location%0A2%EF%B8%8F%E2%83%A3%20A%20brief%20description%20of%20your%20electrical%20project%20or%20issue%0A%0A%F0%9F%8C%90%20Explore%20our%20work%20online%3A%0A%E2%80%A2%20Main%20Website%3A%20https%3A%2F%2Ftnseelectricalprojects.blogspot.com%2Fp%2Fhome.html%23hero%0A%E2%80%A2%20Technical%20Insights%20Blog%3A%20https%3A%2F%2Ftnseblogger.blogspot.com%2Fp%2Fblog.html%0A%0A%F0%9F%93%A7%20Email%3A%20tnse.electricalprojects%40gmail.com%0A%F0%9F%93%9E%20Direct%20Line%20(Gantshe)%3A%20%2B27%2081%20827%206288%0A%F0%9F%93%9E%20Direct%20Line%20(Frans)%3A%20%2B27%2081%20550%207926%0A%0AAn%20electrical%20specialist%20will%20review%20your%20request%20and%20get%20right%20back%20to%20you!" rel="noopener noreferrer" target="_blank">
+      <i class="fa-brands fa-whatsapp text-lg md:text-xl"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        WhatsApp Frans
+      </span>
+    </a>
 
-            <!-- -------------- PROJECT BOX ---------------- -->
+    <a aria-label="Contact Us" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#EA4335] hover:bg-[#d9382a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="https://tnseelectricalprojects.blogspot.com/#contact-section-container">
+      <i class="fa-solid fa-envelope text-base md:text-lg"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        Contact Us
+      </span>
+    </a>
 
-            <section class="section" id="projects">
-                <div class="top-header">
-                    <h1>Projects</h1>
-                </div>
-                <div class="project-container">
-                    <div class="project-box">
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Completed</h3>
-                        <label>15+ Finished Projects</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-users-alt"></i>
-                        <h3>Clients</h3>
-                        <label>25+ Happy Clients</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-award"></i>
-                        <h3>Experience</h3>
-                        <label>7+ Years in the field</label>
-                    </div>
-                </div>
-            </section>
+    <a aria-label="Back to top" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="#top" id="back-to-top">
+      <i class="fa-solid fa-arrow-up text-base md:text-lg"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        Back to top
+      </span>
+    </a>
 
-            <!-- -------------- CONTACT BOX ---------------- -->
+    <button aria-label="Toggle Theme" class="group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-cyan-500 hover:bg-cyan-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-cyan-400 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" id="themeToggle" type="button">
+      <i class="fa-solid fa-moon text-base md:text-lg dark:hidden" id="themeIconMoon"></i>
+      <i class="fa-solid fa-sun text-base md:text-lg hidden dark:block" id="themeIconSun"></i>
+      <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+        Toggle Light/Dark Theme
+      </span>
+    </button>
 
-            <section class="section" id="contact">
-                <div class="top-header">
-                    <h1>Get in touch</h1>
-                    <span>Do you have a project in your mind? Contact me here</span>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="contact-info">
-                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
-                            <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <form action="send_email.php" method="POST" class="form-control">
-                            <div class="form-inputs">
-                                <input type="text" class="input-field" name="name" placeholder="Your Name" required>
-                                <input type="email" class="input-field" name="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="text-area">
-                                <textarea name="message" placeholder="Your Message" required></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
+  </div>
 
-        </main>
+  <header class="fixed top-0 left-0 w-full z-50 bg-cyan-500 dark:bg-gray-900 shadow-md transition-colors duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">    
+      <div class="flex items-center shrink-0">
+        <div>
+          <a class="flex items-center" href="https://tnseelectricalprojects.blogspot.com">
+            <img alt="Logo" class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover dark:hidden" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1777992465/1777992282657_s1c4ca.png">
+            <img alt="Logo Dark" class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover hidden dark:block" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1742312419/IMG-20250318-WA0002_y0kzfs_Circle_hklus3.jpg">
+          </a>
+        </div>
+      </div>
 
+      <div class="flex items-center gap-3 lg:gap-6">
+        <ul class="hidden lg:flex items-center space-x-2 lg:space-x-3 xl:space-x-6 text-orange-500 dark:text-orange-400 text-xs lg:text-sm font-semibold" id="nav-menu">
+          <li><a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseelectricalprojects.blogspot.com/#hero"><i class="fas fa-home"></i> Home</a></li>
+          <li><a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseelectricalprojects.blogspot.com/#about"><i class="fas fa-info-circle"></i> About</a></li>
+          
+          <li class="group relative">
+            <button class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all cursor-pointer focus:outline-none">
+              <i class="fas fa-concierge-bell"></i> Our Services <i class="fas fa-chevron-down text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <ul class="absolute left-0 top-full hidden group-hover:block w-48 bg-white dark:bg-gray-800 text-gray-800 dark:text-white rounded-xl shadow-xl border border-slate-200 dark:border-gray-700 py-2 mt-1 z-50 transition-all">
+              <li>
+                <a class="flex items-center gap-2 px-4 py-2.5 text-xs font-medium hover:bg-cyan-50 dark:hover:bg-gray-700 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" href="https://tnseelectricalprojects.blogspot.com/#solar">
+                  <i class="fas fa-sun text-amber-500"></i> Solar
+                </a>
+              </li>
+              <li>
+                <a class="flex items-center gap-2 px-4 py-2.5 text-xs font-medium hover:bg-cyan-50 dark:hover:bg-gray-700 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" href="https://tnseelectricalprojects.blogspot.com/#services">
+                  <i class="fas fa-bolt text-yellow-500"></i> Electricity
+                </a>
+              </li>
+            </ul>
+          </li>
 
-        <!-- --------------- FOOTER --------------- -->
-        <footer>
-            <div class="top-footer">
-                <p>Sekoala Daniel Bopape .</p>
-            </div>
-            <div class="middle-footer">
-                <ul class="footer-menu">
-                    <li class="footer_menu_list">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-social-icons">
-                <a href="https://facebook.com" class="icon"><i class="uil uil-facebook-f"></i></a>
-                <a href="https://youtube.com" class="icon"><i class="uil uil-youtube"></i></a>
-                <a href="https://telegram.org" class="icon"><i class="uil uil-telegram"></i></a>
-                <a href="https://tiktok.com" class="icon"><i class="uil uil-tiktok"></i></a>
-                <a href="https://instagram.com" class="icon"><i class="uil uil-instagram"></i></a>
-            </div>
-            <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sekoala Daniel Bopape</a> - All rights reserved</p>
-            </div>
-        </footer>
+          <li><a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseblogger.blogspot.com"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseelectricalprojects.blogspot.com/#contact-section-container"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li class="ml-2"><a class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 py-2 rounded-lg shadow hover:shadow-lg transition-all active:scale-95" href="https://tnseelectricalprojects.blogspot.com/#contact-section-container">Get Quote</a></li>
+        </ul>
 
+        <button aria-label="Toggle Theme" class="group relative hidden lg:flex items-center justify-center w-10 h-10 lg:w-11 lg:h-11 bg-cyan-600 hover:bg-cyan-700 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-cyan-400 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" onclick="toggleDarkMode()" type="button">
+          <i class="fa-solid fa-moon text-base lg:text-lg dark:hidden"></i>
+          <i class="fa-solid fa-sun text-base lg:text-lg hidden dark:block"></i>
+          <span class="pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+            Toggle Light/Dark Theme
+          </span>
+        </button>
+
+        <div class="lg:hidden p-2 text-orange-500 dark:text-orange-400 hover:text-orange-600 cursor-pointer rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" id="hamburger" onclick="toggleMobileMenu()">
+          <i class="fa-solid fa-bars-staggered text-xl sm:text-2xl"></i>
+        </div>
+      </div>
     </div>
 
+    <div class="hidden fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity lg:hidden" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
+    <div class="fixed top-0 right-0 z-50 h-full w-64 sm:w-80 bg-cyan-500 dark:bg-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out p-5 sm:p-6 shadow-2xl lg:hidden flex flex-col justify-between overflow-y-auto" id="mobileMenuDrawer">
+      <div>
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-cyan-600/30 dark:border-gray-800">
+          <span class="text-white font-bold text-lg">Menu</span>
+          <div class="flex items-center gap-3">
+            <button aria-label="Toggle Theme" class="flex items-center justify-center w-9 h-9 bg-cyan-600 hover:bg-cyan-700 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-cyan-400 rounded-xl shadow-md transition-all duration-300" onclick="toggleDarkMode()" type="button">
+              <i class="fa-solid fa-moon text-sm dark:hidden"></i>
+              <i class="fa-solid fa-sun text-sm hidden dark:block"></i>
+            </button>
+            <button class="text-white hover:text-orange-300 text-xl cursor-pointer p-1" onclick="closeMobileMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="space-y-3 text-orange-500 dark:text-orange-400 font-semibold text-base">
+          <li><a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseelectricalprojects.blogspot.com/#hero" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a></li>
+          <li><a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseelectricalprojects.blogspot.com/#about" onclick="closeMobileMenu()"><i class="fas fa-info-circle"></i> About</a></li>
+          
+          <li>
+            <button class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all text-left cursor-pointer" onclick="toggleMobileServices()">
+              <span class="flex items-center gap-3"><i class="fas fa-concierge-bell"></i> Our Services</span>
+              <i class="fas fa-chevron-down text-xs transition-transform duration-200" id="mobileServicesArrow"></i>
+            </button>
+            <div class="hidden pl-6 pt-2 space-y-2" id="mobileServicesMenu">
+              <a class="flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-cyan-600/30 text-sm" href="https://tnseelectricalprojects.blogspot.com/#solar" onclick="closeMobileMenu()">
+                <i class="fas fa-sun text-amber-300"></i> Solar
+              </a>
+              <a class="flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-cyan-600/30 text-sm" href="https://tnseelectricalprojects.blogspot.com/#services" onclick="closeMobileMenu()">
+                <i class="fas fa-bolt text-yellow-300"></i> Electricity
+              </a>
+            </div>
+          </li>
 
+          <li><a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseblogger.blogspot.com" onclick="closeMobileMenu()"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-cyan-600/40 dark:hover:bg-gray-800 transition-all" href="https://tnseelectricalprojects.blogspot.com/#contact-section-container" onclick="closeMobileMenu()"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="pt-6 mt-6 border-t border-cyan-600/30 dark:border-gray-800">
+        <a class="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 py-3 rounded-lg shadow transition-all active:scale-95" href="https://tnseelectricalprojects.blogspot.com/#contact-section-container" onclick="closeMobileMenu()">Get Quote</a>
+      </div>
+    </div>
+  </header>
 
-
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
-    <script src="main.js"></script>
 </body>
-
 </html>
